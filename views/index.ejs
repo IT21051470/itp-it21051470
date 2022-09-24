@@ -1,0 +1,40 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+    <!--main site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <h1>Staff Delivery Dispatch Details</h1>
+                <a href="/add-staff-dispatch-details" class="border-shadow">
+                    
+                    <span class="text-gradient" >Add Staff Dispatch Details <i class="fas fa-user"></i></i></span>
+                </a>
+            </div>
+            <!--form handling-->
+            <form action ="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Dispatch ID</th>
+                            <th>Driver Name</th>
+                            <th>Vehicle ID</th>
+                            <th>Route</th>
+                            <th>Date</th>
+                            <th>Cost</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+            </div>
+</main>
+
+    <!--/main site-->
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--/include footer-->

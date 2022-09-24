@@ -1,0 +1,54 @@
+<form action = '/api/users' method="POST" id="addStaffDispatchDetails">
+    <div class ="new_user">
+        <div class="form-group">
+            <label for="dispatchId" class="text-light"> Dispatch ID</label>
+            
+            <input type="text" name="DispatchId" value="" placeholder="Dispatch ID">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="driverName" class="text-light"> Driver Name</label>
+        
+        <input type="text" name="DriverName" value="" placeholder="Driver Name">
+    </div>
+    <div class="form-group">
+        <label for="vehicleId" class="text-light">Vehicle ID</label>
+        
+        <input type="text" name="VehicleId" value="" placeholder="Vehicle ID">
+    </div>
+    <div class="form-group">
+        <label for="route" class="text-light"> Route</label>
+        
+        <input type="text" name="Route" value="" placeholder="Route">
+    </div>
+    <div class="form-group">
+        <label for="date" class="text-light"> Date</label>
+        
+        <input type="date" name="date" value="" placeholder="Date">
+    </div>
+    <div class="form-group">
+        <label for="cost" class="text-light">Cost</label>
+        
+        <input type="number" name="Cost" value="" placeholder="Cost">
+    </div>
+    <div class="form-group">
+        <label for="status" class="text-light">Status</label>
+        <div class="radio inline">
+        <input type="radio" id="radio-2"name="Status" value="On going">
+        <label for ="radio-2" class="radio-label">On going</label>
+        </div>
+        
+        <div class="radio inline">
+            <input type="radio" id="radio-3" name="Status" value="Completed">
+            <label for ="radio-3" class="radio-label">Completed</label>
+            </div>
+        
+        <div class="radio inline">
+        <input type="radio" id="radio-4" name="Status" value="Canceled">
+        <label for ="radio-4" class="radio-label">Canceled</label>
+        </div>
+    </div>
+    <div class = "form-group">
+        <button type="submit" class=" btn text-dark update">Save</button>
+    </div>
+</form>

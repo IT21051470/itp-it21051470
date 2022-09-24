@@ -1,0 +1,77 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/">
+                    <i class = "fas fa-angle-double-left"></i>All users
+                </a>
+            </div>
+        </div>
+        <div class = "form-title text-center">
+            <h2 class ="text-dark">Update Staff Dispatch Details</h2>
+            <span class = "text-light">Use the below form to Update dispatch details</span>
+        </div>
+<!--add user form-->
+<form method="POST" id="update_user">
+    <div class ="new_user">
+        <div class="form-group">
+            <label for="dispatchId" class="text-light"> Dispatch ID</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Dispatch ID">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="driverName" class="text-light"> Driver Name</label>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="name" value="" placeholder="Driver Name">
+    </div>
+    <div class="form-group">
+        <label for="vehicleId" class="text-light">Vehicle ID</label>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="name" value="" placeholder="Vehicle ID">
+    </div>
+    <div class="form-group">
+        <label for="route" class="text-light"> Route</label>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="name" value="" placeholder="Route">
+    </div>
+    <div class="form-group">
+        <label for="date" class="text-light"> Date</label>
+        
+        <input type="date" name="name" value="" placeholder="Date">
+    </div>
+    <div class="form-group">
+        <label for="cost" class="text-light">Cost</label>
+        <input type="hidden" name="id" value="">
+        <input type="number" name="name" value="" placeholder="Cost">
+    </div>
+    <div class="form-group">
+        <label for="status" class="text-light">Status</label>
+        <div class="radio inline">
+        <input type="radio" id="radio-2"name="name" value="On going">
+        <label for ="radio-2" class="radio-label">On going</label>
+        </div>
+        
+        <div class="radio inline">
+            <input type="radio" id="radio-3" name="name" value="Completed">
+            <label for ="radio-3" class="radio-label">Completed</label>
+            </div>
+        
+        <div class="radio inline">
+        <input type="radio" id="radio-4" name="name" value="Canceled">
+        <label for ="radio-4" class="radio-label">Canceled</label>
+        </div>
+    </div>
+    <div class = "form-group">
+        <button type="submit" class=" btn text-dark update">Save</button>
+    </div>
+</form>
+        </div>
+</main>
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
